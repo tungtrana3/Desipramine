@@ -36,3 +36,21 @@ if(place_meeting(x, y+vsp, oWall))
 	vsp = 0;
 }
 y = y + vsp;
+
+//Animation
+if(!place_meeting(x, y+1, oWall))
+{
+	image_speed = 1;
+	sprite_index = SPlayerA;	
+	if(sign(vsp)>0) image_index = 1 else image_index = 7;
+}else{
+	image_speed = 1;
+	if(hsp = 0)
+	{
+		sprite_index = SPlayer;
+	}else
+	{
+		sprite_index = SPlayerR;
+	}
+}
+if(hsp!=0) image_xscale = sign(hsp);
