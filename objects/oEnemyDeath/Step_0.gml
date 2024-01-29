@@ -13,23 +13,21 @@ if(done == 0)
 		hsp = 0;
 	}
 	x = x + hsp;
-	
 	//Vertical Collision
 	if(place_meeting(x, y+vsp, oWall))
 	{
 		if(vsp > 0) {
 			done = 1;
 		};
-		
+	
 		while(!place_meeting(x,y+sign(vsp),oWall))
 		{
 			y = y + sign(vsp);
 		}
-		image_speed = 0;
-		image_index = 7;
 		vsp = 0;
 	}
 	y = y + vsp;
 
 	if(hsp!=0) image_xscale = sign(hsp);
 }
+if(image_index > image_number - 1) instance_destroy();

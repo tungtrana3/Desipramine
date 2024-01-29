@@ -4,6 +4,18 @@ key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 
 key_jump = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W"));
 
+if (key_jump) || (key_left) || (key_right)
+{
+	controller = 0;
+}
+
+if(abs(gamepad_button_check(0, gp_axislh))>0.2)
+{
+	key_left = abs(min(gamepad_axis_value(0, gp_axislh), 0));
+	key_right = max(gamepad_axis_value(0, gp_axislh), 0);
+	controller = 1;
+
+}
 //Caculate Movement
 var move = key_right - key_left;
 

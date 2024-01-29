@@ -1,6 +1,4 @@
-hsp = 0;
-vsp = 0;
+hsp = 0 + random_range(-3,3);
+vsp = -3 + random_range(-2,1);
 grv = 0.3;
 done = 0;
-
-image_speed = 0;
