@@ -38,7 +38,9 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"sTitle","path":"sprites/sTitle/sTitle.yy",},},
     {"id":{"name":"shWhite","path":"shaders/shWhite/shWhite.yy",},},
+    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
     {"id":{"name":"SPlayerA","path":"sprites/SPlayerA/SPlayerA.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
@@ -46,6 +48,7 @@
     {"id":{"name":"oEnemyDeath","path":"objects/oEnemyDeath/oEnemyDeath.yy",},},
     {"id":{"name":"oGun","path":"objects/oGun/oGun.yy",},},
     {"id":{"name":"SPlayer","path":"sprites/SPlayer/SPlayer.yy",},},
+    {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"sEnemyH","path":"sprites/sEnemyH/sEnemyH.yy",},},
     {"id":{"name":"bg_2","path":"sprites/bg_2/bg_2.yy",},},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
